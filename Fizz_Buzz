@@ -1,12 +1,12 @@
-for (var i = 0; i <= 100; i = i + 1) {
-  if (i%3 == 0) {
+for (var i = 1; i <= 100; i = i + 1) {
+  if (i%3 == 0 && i%5 !== 0) {
     console.log ("Fizz");
   }
-  if (i%5 == 0) {
+  if (i%5 == 0 && i%3 !== 0) {
     console.log ("BuZZ");
   }
-  else if (i%3 == 0 && i%5 == 0) {
-    console.log ("fizzbuzz");
+  if (i%3 == 0 && i%5 == 0) {
+    console.log ("fizz_buzz");
   }
   else {
 	 console.log( i );
